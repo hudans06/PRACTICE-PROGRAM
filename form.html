@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>identitas form</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 16px;
+        }
+        .container-form {
+            width: 400px;
+            height: 250px;
+            margin: 0 auto;
+            padding: 10px;
+            /* membuat objek menjadi 3d */
+            border: 3px insert #e0e0e0;
+            background-color: #ffffff;
+
+            overflow-y:scroll;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td {
+            padding: 5px;
+        }
+        input[type="text"], textarea {
+            width: 250px;
+        }
+        tr:last-child input[type="text"] {
+            width: 150px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class ="container-form">
+        <form action="proses_simpan.php" method="post"> 
+              <table>
+                <tr> 
+                    <td>Name:</td>
+                    <td><input type="text" value="you name here"></td>
+                </tr>
+                <tr> 
+                    <td>Email:</td>
+                    <td><input type="text" value="you email here"></td>
+                </tr>
+                <tr> 
+                    <td style="vertical-align: top;">Address:</td>
+                    <td>
+                        <textarea rows="4" cols="50">25 Nowhere Street&#10;Somewhere&#10;Not Here&#10;Y2K 5RU</textarea>
+                    </td>
+                </tr>
+                <tr> 
+                    <td>Postcode:</td>
+                    <td><input type="text" value="you postcode here"></td>
+                </tr>
+
+              </table>  
+        </form>
+    </div>
+</body>
+
+</html>
