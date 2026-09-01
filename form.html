@@ -14,10 +14,16 @@
             margin: 0 auto;
             padding: 10px;
             /* membuat objek menjadi 3d */
-            border: 3px insert #e0e0e0;
+            border: 3px inset gray;
             background-color: #ffffff;
 
             overflow-y:scroll;
+        }
+        textarea {
+            resize: none;
+            width: 250px;
+            overflow-y:scroll;
+            font-family:monospace;
         }
         table {
             border-collapse: collapse;
@@ -26,7 +32,7 @@
         td {
             padding: 5px;
         }
-        input[type="text"], textarea {
+        input[type="text"] {
             width: 250px;
         }
         tr:last-child input[type="text"] {
