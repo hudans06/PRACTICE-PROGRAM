@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: arial, sans-serif;
+    }
+    
+    
+    table.container {
+        border: 2px solid orange;    
+        width: 50%; 
+        margin: 20px auto;
+        border-collapse: collapse; 
+    }
+
+    
+    th.header, th.footer {
+        background-color: #ffe5cc;
+        text-align: center;
+        padding: 30px;
+        font-weight: normal; 
+    }
+
+    th.nav {
+        background-color: #cfe2f3;
+        text-align: center;
+        padding: 15px;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        font-weight: normal;
+    }
+
+    
+    td.content {
+        background-color: #f4cccc; 
+        width: 87.5%; 
+        padding: 80px;
+        border-right: 1px solid gray;
+        border-bottom: 1px solid gray; 
+        height: 300px;
+        vertical-align: top; 
+    }
+
+    
+    td.sidebar {
+        width: 12.5%; 
+        background-color: #d9ead3;
+        padding: 90px;
+        border-bottom: 1px solid gray;
+        vertical-align: top;
+    }   
+    
+    .sidebar ul {
+        margin-left: 20px;
+    }
+    </style>
+    <title>Latihan Layout dengan Tabel</title>
+</head>
+
+<body>
+    
+    <table class="container"> 
+        
+        
+        <tr>
+            <th colspan="2" class="header">HEADER</th>
+        </tr>
+
+        
+        <tr>
+            <th colspan="2" class="nav">NAVIGATION</th>
+        </tr>
+        
+        <tr> 
+            <td class="content">
+                <h1> Heading 1 </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>adipisicing elit, sed do eiusmod tempor </p>
+                <p>incididunt ut labore et dolore magna aliqua.</p>
+            </td>
+
+            <td class="sidebar">
+                <strong>Menu:</strong>
+                <ul>
+                    <li>Home</li>
+                    <li>Berita</li>
+                    <li>Layanan</li>
+                    <li>Kontak</li>
+                </ul>   
+            </td>
+        </tr>
+
+        <tr>
+            <th colspan="2" class="footer">FOOTER</th>
+        </tr>
+        
+    </table>
+
+</body>
+</html>
