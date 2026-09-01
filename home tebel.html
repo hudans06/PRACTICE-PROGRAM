@@ -38,7 +38,7 @@
     
     td.content {
         background-color: #f4cccc; 
-        width: 87.5%; 
+        width: 80%;
         padding: 80px;
         border-right: 1px solid gray;
         border-bottom: 1px solid gray; 
@@ -48,16 +48,11 @@
 
     
     td.sidebar {
-        width: 12.5%; 
-        background-color: #d9ead3;
+        background-color: #d9ead3;  
         padding: 90px;
         border-bottom: 1px solid gray;
-        vertical-align: top;
-    }   
+    } 
     
-    .sidebar ul {
-        margin-left: 20px;
-    }
     </style>
     <title>Latihan Layout dengan Tabel</title>
 </head>
@@ -78,20 +73,22 @@
         
         <tr> 
             <td class="content">
-                <h1> Heading 1 </h1>
+                <h1 style="margin-bottom: 15px"> Heading 1 </h1>
                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                 <p>adipisicing elit, sed do eiusmod tempor </p>
                 <p>incididunt ut labore et dolore magna aliqua.</p>
             </td>
 
-            <td class="sidebar">
-                <strong>Menu:</strong>
+            <td style="width: 20%; background-color: #d9ead3; border-bottom: 1px solid gray;">
+                <h3>Menu:</h3>
+                <main style="padding-left: 50px;">
                 <ul>
                     <li>Home</li>
                     <li>Berita</li>
                     <li>Layanan</li>
                     <li>Kontak</li>
-                </ul>   
+                </ul>  
+                </main>
             </td>
         </tr>
 
